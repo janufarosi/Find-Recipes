@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find recipes recipe page</title>
+    <link rel="stylesheet" href="CSS/recipe.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    
+
+<!--header-->
+
+<header>
+    <div class="header">
+        <div class="header1">
+        <a href="index.html" class="sha"><i class="bi bi-fork-knife"></i> &nbsp;&nbsp; Recipe Finder </a>
+        <a href="index.html" >Home</a>
+        <a href="#" class="active">Recipes</a>
+        <a href="#">Categories</a>
+        <a href="#">Ingredients Search</a>
+        </div>
+        <div class="header2">
+            <div class="head1">
+              <a href="#"> <i class="bi bi-search"></i>&nbsp;&nbsp; <input type="search" placeholder="Search">  </a>
+            </div>
+            <div class="head2">
+              <a href="logout.html"><i class="bi bi-person-fill"></i></a>
+            </div>
+            <div class="head3">
+                <a href="log.html">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+
+<!--recipe-->
+
+
+<section class="recipeout">
+
+
+<h2>Recipes</h2>
+
+
+<div class="recipe">
+   
+    <div class="re1">
+    <p>Veg/Non-Veg
+        <span class="arrow" id="toveg">▼</span>
+    </p>
+    <div class="vege" id="veg">
+        <p>Veg</p>
+        <p>Non-Veg</p>
+    </div>
+   </div>
+
+   <div class="re1">
+    <p>Cuisine 
+        <span class="arrow" id="toveg1">▼</span>
+    </p>
+    <div class="vege" id="veg1">
+        <p>Cuisine</p>
+        <p>Indian</p>
+        <p>Chinese</p>
+        <p>Italian</p>
+    </div>
+   </div>
+
+   <div class="re1">
+    <p>Meal type 
+        <span class="arrow" id="toveg2">▼</span>
+    </p>
+    <div class="vege" id="veg2">
+        <p>Breakfast</p>
+        <p>Lunch</p>
+        <p>Dinner</p>
+    </div>
+   </div>
+
+</div>
+
+<div class="recipe1">
+
+<div class="recipe1in">
+    <a href="itemview.html">
+        <img src="image/re1.jpg" alt="image">
+        <p>Creamy Tomato Pasta
+            <br>
+            <span>60 min. 4.5</span>
+        </p>
+    </a>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re2.jpg" alt="image">
+        <p>Vegetable Biryani
+            <br>
+            <span>45 min. 4.2</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re3.jpg" alt="image">
+        <p>Pasta Carbonara
+            <br>
+            <span>30 min. 4.8</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re4.jpg" alt="image">
+        <p>Grilled Salmon
+            <br>
+            <span>25 min. 4.6</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re5.jpg" alt="image">
+        <p> Tofu Stir-Fry
+            <br>
+            <span>35 min. 4.3</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re6.jpg" alt="image">
+        <p> Beef Tacos
+            <br>
+            <span>40 min. 4.7</span>
+        </p>
+</div>
+
+
+<div class="recipe1in">
+        <img src="image/re7.jpg" alt="image">
+        <p> Mushroom Risotto
+            <br>
+            <span>50 min. 4.9</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re8.jpg" alt="image">
+        <p> Shrimp Scampi
+            <br>
+            <span>20 min. 4.9</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re9.jpg" alt="image">
+        <p> Lentil Soup
+            <br>
+            <span>55 min. 4.1</span>
+        </p>
+</div>
+
+<div class="recipe1in">
+        <img src="image/re10.jpg" alt="image">
+        <p>Pork Dumplings
+            <br>
+            <span>30 min. 4.0</span>
+        </p>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+<script>
+    const togle = document.getElementById("toveg")
+    const vegs = document.getElementById("veg")
+
+    togle.addEventListener("click",function(e){
+        e.stopPropagation();
+        vegs.style.display = vegs.style.display === "block" ? "none" : "block";   
+     });
+
+     document.addEventListener("click",function(){
+        vegs.style.display = "none";
+
+     });
+     vegs.addEventListener("click",function(e){
+         e.stopPropagation();
+     });
+
+
+    const togle1 = document.getElementById("toveg1")
+    const vegs1 = document.getElementById("veg1")
+
+    togle1.addEventListener("click",function(e){
+        e.stopPropagation();
+        vegs1.style.display = vegs1.style.display === "block" ? "none" : "block";   
+     });
+
+     document.addEventListener("click",function(){
+        vegs1.style.display = "none";
+
+     });
+     vegs1.addEventListener("click",function(e){
+         e.stopPropagation();
+     });
+
+
+    const togle2 = document.getElementById("toveg2")
+    const vegs2 = document.getElementById("veg2")
+
+    togle2.addEventListener("click",function(e){
+        e.stopPropagation();
+        vegs2.style.display = vegs2.style.display === "block" ? "none" : "block";   
+     });
+
+     document.addEventListener("click",function(){
+        vegs2.style.display = "none";
+
+     });
+     vegs2.addEventListener("click",function(e){
+         e.stopPropagation();
+     });
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+
+<footer>
+
+    <div class="footer1">
+        <p>About Us</p>
+        <p>Contact</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+    </div>
+    <div class="footer2">
+        <p>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+        </p>
+        <p>&copy;2024 Recipe Finder.All rights reserved</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+</body>
+</html>
